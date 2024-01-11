@@ -1,0 +1,13 @@
+Install https://www.docker.com/get-started/ => setup
+Test : docker-compose --version
+docker image, xem images
+docker image rm (remove)
+List Docker Images: docker image ls, xem list ngang
+Execute docker image: docker run <Image Name>
+List Docker containers: docker container ls 
+                        docker container ls --all
+                        docker container ls -aq
+Remove image: docker rmi -f <image id>
+clean up containers, images, volumes, and networks all in one command:      docker system prune
+emove all stopped containers: docker container prune
+delete all images: docker rmi -f $(docker images -aq)
